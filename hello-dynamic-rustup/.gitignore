@@ -1,0 +1,5 @@
+/.rustup
+/.cargo
+/.history
+/hello
+*.o
