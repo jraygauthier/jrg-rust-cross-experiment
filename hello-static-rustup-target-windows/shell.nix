@@ -29,10 +29,16 @@ pkgs.mkShell rec {
         "--enable-static"
       ];
     }))
+
+    # Testing produced executables and for `winedump`.
+    # wineWowPackages.full
+    wineWowPackages.stable
   ];
   # Avoid polluting home dir with local project stuff.
   RUSTUP_HOME = toString ./.rustup;
   CARGO_HOME = toString ./.cargo;
+  WINEPREFIX = toString ./.wine;
+
   RUSTC_VERSION = pkgs.lib.readFile ./rust-toolchain;
   # https://github.com/rust-lang/rust-bindgen#environment-variables
   LIBCLANG_PATH= pkgs.lib.makeLibraryPath [ pkgs.llvmPackages_latest.libclang.lib ];

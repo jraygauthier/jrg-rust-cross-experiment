@@ -1,0 +1,12 @@
+{
+    "files.exclude": {
+        "**/.wine/**": true,
+        "**/.rustup/**": true,
+        "**/.cargo/**": true
+    },
+    "files.watcherExclude": {
+        "**/.wine/**": true,
+        "**/.rustup/**": true,
+        "**/.cargo/**": true
+    }
+}

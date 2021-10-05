@@ -1,5 +1,6 @@
-/.rustup
-/.cargo
+/.rustup/
+/.cargo/
+/.wine/
 /.history
 /hello.exe
 *.o
