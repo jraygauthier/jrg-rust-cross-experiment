@@ -1,0 +1,5 @@
+/.rustup/
+/.cargo/
+/.wine/
+/.history
+/target
