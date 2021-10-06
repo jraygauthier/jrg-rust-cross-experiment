@@ -3,4 +3,5 @@
 /.wine/
 /.history
 /hello.exe
+/target/
 *.o
