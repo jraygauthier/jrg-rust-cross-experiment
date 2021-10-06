@@ -56,6 +56,9 @@ pkgs.mkShell rec {
   shellHook = ''
     export PATH=$PATH:${CARGO_HOME}/bin
     export PATH=$PATH:${RUSTUP_HOME}/toolchains/${rustupToolchain}-${rustBuildHostTriple}/bin/
+
+    # Ensures our windows target is added via rustup.
+    rustup target add "${rustBuildTargetTriple}"
     '';
   RUSTFLAGS = (builtins.map (a: ''-L ${a}/lib'') [
     mingw_w64

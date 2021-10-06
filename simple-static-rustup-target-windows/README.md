@@ -9,12 +9,6 @@ This is similar to `hello-static-rustup-target-windows` but this time, we
 experiment with a non trivial project that has dependencies (in this case
 the `clap` cli parser lib).
 
-Enable cross compilation to desired target:
-
-```bash
-$ rustup target add x86_64-pc-windows-gnu
-```
-
 Build and run:
 
 ```bash
@@ -32,6 +26,9 @@ USAGE:
 
 For more information try --help
 ```
+
+Note how we weren't force to invoke `rustup target add $TARGET_TRIPLE` as our
+nix env shell hook did that for us.
 
 Note how `cargo run` has configured by our nix env to use wine to run our program.
 
