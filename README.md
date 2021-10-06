@@ -25,7 +25,17 @@ See [hello-static-rustup/README.md](./hello-static-rustup/README.md)
 
 ### Statically linked to libc
 
-See [hello-static-rustup-target-windows/README.md](./hello-static-rustup-target-windows/README.md)
+See:
+
+ -  [hello-static-rustup-target-windows/README.md](./hello-static-rustup-target-windows/README.md)
+
+    Trivial no dependency hello world.
+
+ -  [simple-static-rustup-target-windows/README.md](./simple-static-rustup-target-windows/README.md)
+
+    Non trivial tough simple project with dependencies.
+
+    Ready for use as scafolding project.
 
 
 ## References

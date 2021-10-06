@@ -35,6 +35,15 @@ For more information try --help
 
 Note how `cargo run` has configured by our nix env to use wine to run our program.
 
+Validate that we're still free of dynamic dependencies:
+
+```bash
+$ winedump -j export ./target/x86_64-pc-windows-gnu/debug/simple-static-rustup-target-windows.exe 
+Contents of ./target/x86_64-pc-windows-gnu/debug/simple-static-rustup-target-windows.exe: 14574056 bytes
+
+Done dumping ./target/x86_64-pc-windows-gnu/debug/simple-static-rustup-target-windows.exe
+```
+
 
 ## References
 
